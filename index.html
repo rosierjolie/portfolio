@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <!-- Introduction section -->
+  <section id="jumbotron">
+    <img src="./img/bitmoji-avatar.jpg" alt="Bitmoji avatar">
+    <span>
+      <h1>Hello! I'm Geraldine.</h1>
+      <h2>I am an aspiring software engineer with a passion for building useful and gorgeous applications. Over the past two
+        years, I chased after my desire to learn languages and frameworks while building awesome products.</h2>
+      <span id="jumbotron-buttons">
+        <button onclick="viewWorkButtonClicked()">View Work</button>
+        <div id="jumbotron-links">
+          <a class="image-link" href="https://github.com/rosierjolie" target="_blank" title="GitHub profile"><i
+              class="fab fa-github fa-3x"></i></a>
+          <a class="image-link" href="https://www.linkedin.com/in/geraldineturcios" target="_blank"
+            title="LinkedIn profile"><i class="fab fa-linkedin fa-3x"></i></a>
+          <a class="image-link" href="https://www.dropbox.com/s/orymkap2h9g1q9t/resume.pdf?dl=0" title="Resume link"><i
+              class="fas fa-file-alt fa-3x"></i></a>
+        </div>
+      </span>
+    </span>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <p id="skills-title">Skills &amp; Technologies</p>
+    <div id="skills-grid">
+      <div id="skills-grid-languages">
+        <p class="skills-grid-column-title"><i class="fas fa-code"></i> Languages</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>Swift</p>
+        <p>JavaScript</p>
+        <p>Python</p>
+      </div>
+      <div id="skills-grid-ios">
+        <p class="skills-grid-column-title"><i class="fas fa-mobile-alt"></i> iOS skills</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>UIKit</p>
+        <p>SwiftUI</p>
+        <p>SpriteKit</p>
+      </div>
+      <div id="skills-grid-frontend">
+        <p class="skills-grid-column-title"><i class="fas fa-desktop"></i> Front-end</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>SASS</p>
+        <p>React.js</p>
+      </div>
+      <div id="skills-grid-frontend">
+        <p class="skills-grid-column-title"><i class="fas fa-server"></i> Back-end</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>Node.js</p>
+        <p>Postgres</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <p id="projects-title">Projects</p>
+
+    <!-- Mnemosyne -->
+    <div class="projects-container">
+      <span>
+        <img src="./img/mnemosyne-1.png" alt="Mnemosyne screenshot 1">
+        <img src="./img/mnemosyne-2.png" alt="Mnemosyne screenshot 2">
+      </span>
+      <span class="projects-container-content">
+        <p class="projects-container-title">Mnemosyne</p>
+        <p class="projects-container-description">Mnemosyne is an iOS application that is used to keep track previously
+          applied jobs. The app is built using SwiftUI, a declarative UI framework unveiled by Apple at WWDC 2019. All
+          the data that is created by the user is stored locally using UserDefaults.</p>
+        <p class="project-technologies"><strong>Technologies:</strong> Swift, SwiftUI</p>
+        <div class="projects-links">
+          <a class="image-link" href="https://github.com/rosierjolie/Mnemosyne" target="_blank">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </div>
+      </span>
+    </div>
+
+    <!-- Gamebook Engine -->
+    <div class="projects-container">
+      <span>
+        <img src="./img/gamebook-1.png" alt="Gamebook Engine screenshot 1">
+        <img src="./img/gamebook-2.png" alt="Gamebook Engine screenshot 2">
+      </span>
+      <span class="projects-container-content">
+        <p class="projects-container-title">Gamebook Engine</p>
+        <p class="projects-container-description">Gamebook Engine is an open source iOS application for creating and
+          playing gamebooks, a type of interactive fiction where the player gets to make decisions that influence the
+          story. I made a few contributions to the project including adding new features and making a few optimizations
+          to the codebase. This project was the first time I was introduced to an existing iOS app codebase.</p>
+        <p class="project-technologies"><strong>Technologies:</strong> Swift, UIKit, SpriteKit, CoreData</p>
+        <a class="image-link" href="https://github.com/amiantos/gamebookengine.git" target="_blank">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </span>
+    </div>
+
+    <!-- Sharpshooter -->
+    <div class="projects-container">
+      <span id="sharpshooter-screenshots-container">
+        <img src="./img/sharpshooter-1.png" alt="Sharpshooter screenshot 1">
+        <img src="./img/sharpshooter-2.png" alt="Sharpshooter screenshot 2">
+      </span>
+      <span class="projects-container-content">
+        <p class="projects-container-title">Sharpshooter</p>
+        <p class="projects-container-description">Sharpshooter is an iOS application where the player has 60 seconds to
+          destroy as many green targets possible while avoiding to shoot the red targets. The user's high score is
+          stored locally, and it is updated when the user breaks their record. The app is built using SpriteKit to
+          handle the 2D objects that appear on the screen. All the graphic assets like the background and targets were
+          created by me.</p>
+        <p class="project-technologies"><strong>Technologies:</strong> Swift, UIKit, SpriteKit</p>
+        <div class="projects-links">
+          <a class="image-link" href="https://github.com/rosierjolie/Sharpshooter" target="_blank">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </div>
+      </span>
+    </div>
+
+    <!-- Knowglet -->
+    <div class="projects-container">
+      <span id="knowglet-screenshots-container">
+        <img src="./img/knowglet-1.png" alt="Knowglet screenshot 1">
+        <img src="./img/knowglet-2.png" alt="Knowglet screenshot 2">
+      </span>
+      <span class="projects-container-content">
+        <p class="projects-container-title">Knowglet</p>
+        <p class="projects-container-description">Knowglet was a website worked on by a group of four college students
+          and one project manager. The goal for the project was to develop a website to refine search for academia
+          purposes. The user would create a tree for a certain topic with more specific terms being added towards the
+          bottom of the tree. The user would have been able to use the tree as a context for a search in order to get
+          more specific content. My role was to develop a REST API for the search/tree algorithm while also implementing
+          the functionality of the front-end. I collaborated with another front-end developer in implementing the design
+          specifications from our designer on the team.</p>
+        <p class="project-technologies"><strong>Technologies:</strong> JavaScript, Python, React.js, Django</p>
+      </span>
+    </div>
+
+    <!-- CampNav -->
+    <div class="projects-container">
+      <span>
+        <img src="./img/campnav-1.png" alt="CampNav screenshot 1">
+        <img src="./img/campnav-2.png" alt="CampNav screenshot 2">
+      </span>
+      <span class="projects-container-content">
+        <p class="projects-container-title">CampNav</p>
+        <p class="projects-container-description">CampNav is a React web application that allows the user to be able to
+          identify select campus buildings at Stony Brook University. The building identifier is constructed using
+          AutoML, a ML tool for Google Cloud Platform. Once the user takes a photo of a campus building, the photo is
+          sent to a Flask server which returns the name of the building along with a probability percentage based on the
+          accuracy of the prediction.</p>
+        <p class="project-technologies"><strong>Technologies:</strong> JavaScript, Python, React.js, Flask, AutoML</p>
+        <div class="projects-links">
+          <a class="image-link" href="https://github.com/rosierjolie/campnav-client" target="_blank"
+            title="React app repository">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+          <a class="image-link" href="https://github.com/rosierjolie/campnav-server" target="_blank"
+            title="Flask server repository">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </div>
+      </span>
+    </div>
+
+    <!-- Hangman -->
+    <div class="projects-container">
+      <span>
+        <img src="./img/hangman-1.png" alt="Hangman screenshot 1">
+        <img src="./img/hangman-2.png" alt="Hangman screenshot 2">
+      </span>
+      <span class="projects-container-content">
+        <p class="projects-container-title">Hangman</p>
+        <p class="projects-container-description">Hangman is an iOS application where the user reveals a word by
+          guessing letters before they run out of tries. The app's UI is built programmatically using commonly used
+          UIKit views and controls.
+        </p>
+        <p class="project-technologies"><strong>Technologies:</strong> Swift, UIKit</p>
+        <a class="image-link" href="https://github.com/rosierjolie/Hangman" target="_blank">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </span>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© Geraldine 2021</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/scroll.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(233, 205, 243);
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: rgb(70, 18, 107);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.image-link {
+  color: black;
+  margin: 0.2rem;
+}
+
+#jumbotron {
+  color: rgb(70, 18, 107);
+  display: grid;
+  grid-template-columns: auto 2fr;
+  align-content: center;
+  height: 100vh;
+  padding: 0 14rem;
+}
+
+#jumbotron img {
+  border: 0.4rem dotted rgb(231, 121, 184);
+  border-radius: 100%;
+  justify-self: flex-end;
+  margin-right: 6rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+#jumbotron h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#jumbotron h2 {
+  font-size: 20px;
+  margin: 1rem 0;
+}
+
+#jumbotron #jumbotron-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skills {
+  background-color: rgb(231, 121, 184);
+  color: white;
+  width: 100vw;
+  padding: 2rem 0 6rem 0;
+  text-align: center;
+}
+
+#skills #skills-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+#skills #skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#skills #skills-grid p {
+  font-size: 24px;
+}
+
+#projects {
+  background-color: rgb(233, 205, 243);
+  color: rgb(70, 18, 107);
+  text-align: center;
+  width: 100vw;
+}
+
+#projects #projects-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+#projects .projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10rem 5rem;
+}
+
+#projects .projects-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+#projects img {
+  width: 14rem;
+}
+
+#projects .projects-container-title {
+  font-size: 30px;
+}
+
+#projects .projects-container-description {
+  margin: 0 0rem;
+}
+
+#projects .projects-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .app-store-badge {
+  margin-left: 0.5rem;
+  width: 8rem;
+}
+
+#sharpshooter-screenshots-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sharpshooter-screenshots-container img {
+  margin-bottom: 0.5rem;
+  width: 28rem;
+}
+
+#knowglet-screenshots-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#knowglet-screenshots-container img {
+  margin-top: 0.5rem;
+  width: 28rem;
+}
+
+footer {
+  background-color: rgb(188, 72, 153);
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  #jumbotron {
+    height: 160vh;
+  }
+}
+
+@media (max-width: 1080px) {
+  #jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  #jumbotron img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  #jumbotron h1 {
+    font-size: 26px;
+  }
+
+  #jumbotron h2 {
+    margin: 1rem 6rem;
+    font-size: 18px;
+  }
+
+  #jumbotron #jumbotron-buttons {
+    display: block;
+  }
+
+  #jumbotron #jumbotron-links {
+    margin-top: 1rem;
+  }
+
+  #skills #skills-title {
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  #skills #skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #skills #skills-grid p {
+    font-size: 20px;
+  }
+
+  #skills .skills-grid-column-divider {
+    display: none;
+  }
+
+  #projects #projects-title {
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #projects .projects-container {
+    grid-template-columns: 1fr;
+    margin: 0;
+    margin-bottom: 8rem;
+  }
+
+  #projects .projects-container-content {
+    align-items: center;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  #projects .project-technologies {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #projects img {
+    width: 8rem;
+  }
+
+  #sharpshooter-screenshots-container img {
+    margin: 0.5rem;
+    width: 16rem;
+  }
+
+  #knowglet-screenshots-container img {
+    margin: 0.5rem;
+    width: 16rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #jumbotron h2 {
+    margin: 1rem 0.4rem;
+  }
+}
